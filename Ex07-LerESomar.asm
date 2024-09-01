@@ -1,0 +1,12 @@
+MOV AH, 00h
+Int 16h
+MOV BX, AX
+MOV AH, 00h
+INT 16h
+SUB AL, 30h
+SUB BL, 30h
+ADD Al, bl
+MOV DL, AL
+ADD DL, 30h
+MOV AH, 02h
+INT 21h
